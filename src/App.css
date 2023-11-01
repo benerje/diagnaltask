@@ -42,6 +42,7 @@
 .search-icon {
   font-size: 24px;
   height: 30px;
+  cursor: pointer;
 }
 
 .card-title {
@@ -86,6 +87,8 @@
     justify-content: center;
     align-items: center;
     padding: 0px 10px;
+    position: absolute;
+    z-index: -1;
   }
   .card-title {
     text-overflow: ellipsis;
@@ -124,7 +127,4 @@ body {
 }
 ::-webkit-scrollbar {
   width: 0; /* Set the width of the scrollbar to 0 */
-}
-body::-webkit-scrollbar {
-  width: 0 !important; /* Set the width of the scrollbar to 0 */
 }
