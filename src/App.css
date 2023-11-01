@@ -1,38 +1,130 @@
-.App {
+/* TopNavbar.css */
+.top-navbar {
+  background-image: url("https://test.create.diagnal.com/images/nav_bar.png");
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.nav-height {
+  height: 120px;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.back-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.app-name {
+  font-size: 20px;
+  margin-left: 14px; /* Adjust the margin as needed */
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  margin-top: 6%;
+}
+
+.card-content {
+  margin: 20px;
+}
+
+.search-icon {
+  font-size: 24px;
+  height: 30px;
+}
+
+.card-title {
+  color: #ffffff;
+  z-index: -1;
+}
+.icon-size {
+  width: 30px;
+  height: 30px;
+}
+
+.card-image {
+  aspect-ratio: 2/3;
+}
+
+.fallback-image {
+  height: 272px;
+  width: 182px;
+}
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0 !important; /* Set the width of the scrollbar to 0 */
+  }
+  .card-image {
+    width: 100%;
+  }
+  .card-content {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 105px;
+    height: 167px;
+  }
+  .fallback-image {
+    width: 105px;
+    height: 167px;
+  }
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 16%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  .card-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100px;
+  }
+}
+
+.no-items {
+  color: #fff;
+  margin-top: 16%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loader {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0px;
+  background-color: #171717;
+  font-family: "Titillium Web", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-area {
+  width: 120px;
+}
+.search-bar {
   display: flex;
-  flex-direction: column;
+  height: 30px;
+  gap: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 0; /* Set the width of the scrollbar to 0 */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body::-webkit-scrollbar {
+  width: 0 !important; /* Set the width of the scrollbar to 0 */
 }
