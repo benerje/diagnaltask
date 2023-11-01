@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/diagnaltask/static/css/main.0ff72d83.css",
+    "main.css": "/diagnaltask/static/css/main.906ec0cf.css",
     "main.js": "/diagnaltask/static/js/main.54b40b79.js",
     "index.html": "/diagnaltask/index.html",
-    "main.0ff72d83.css.map": "/diagnaltask/static/css/main.0ff72d83.css.map",
+    "main.906ec0cf.css.map": "/diagnaltask/static/css/main.906ec0cf.css.map",
     "main.54b40b79.js.map": "/diagnaltask/static/js/main.54b40b79.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ff72d83.css",
+    "static/css/main.906ec0cf.css",
     "static/js/main.54b40b79.js"
   ]
 }
