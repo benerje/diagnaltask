@@ -1,4 +1,3 @@
-/* TopNavbar.css */
 .top-navbar {
   background-image: url("https://test.create.diagnal.com/images/nav_bar.png");
   color: #fff;
@@ -64,9 +63,6 @@
   width: 182px;
 }
 @media (max-width: 768px) {
-  ::-webkit-scrollbar {
-    width: 0 !important; /* Set the width of the scrollbar to 0 */
-  }
   .card-image {
     width: 100%;
   }
@@ -124,7 +120,4 @@ body {
   height: 30px;
   gap: 10px;
   align-items: center;
-}
-::-webkit-scrollbar {
-  width: 0; /* Set the width of the scrollbar to 0 */
 }
