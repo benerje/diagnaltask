@@ -27,7 +27,6 @@ const ContentProfile: React.FC = () => {
   const onSearch = (e: any) => {
     dispatch(searchContent(e.target.value));
   };
-  const data = searchItem ? searchedContent : content;
 
   return (
     <div className="container">
@@ -51,16 +50,21 @@ const ContentProfile: React.FC = () => {
           scrollableTarget="scrollableDiv"
         >
           <div className="card-list">
-            {data.map((item: any, Index: number) => (
-              <div key={Index} className="card-content">
-                <ImageWithFallback
-                  alt={item.name}
-                  fallbackSrc="https://test.create.diagnal.com/images/placeholder_for_missing_posters.png"
-                  src={`https://test.create.diagnal.com/images/${item["poster-image"]}`}
-                />
-                <div className="card-title">{item.name}</div>
-              </div>
-            ))}
+            {(searchItem ? searchedContent : content).map(
+              (item: any, Index: number) => (
+                <div
+                  key={item.name + item["poster-image"] + Index}
+                  className="card-content"
+                >
+                  <ImageWithFallback
+                    alt={item.name}
+                    fallbackSrc="https://test.create.diagnal.com/images/placeholder_for_missing_posters.png"
+                    src={`https://test.create.diagnal.com/images/${item["poster-image"]}`}
+                  />
+                  <div className="card-title">{item.name}</div>
+                </div>
+              )
+            )}
           </div>
         </InfiniteScroll>
       )}
@@ -68,4 +72,4 @@ const ContentProfile: React.FC = () => {
   );
 };
 
-export default memo(ContentProfile);
+export default ContentProfile;
