@@ -12,7 +12,7 @@ const TopNavbar: React.FC<{
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 100) {
         setScrolling(true);
       } else {
         setScrolling(false);
